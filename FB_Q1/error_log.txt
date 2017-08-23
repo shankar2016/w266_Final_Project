@@ -1,0 +1,36 @@
+[I 09:37:44.416 NotebookApp] Saving file at /QA_08062017.ipynb
+[I 09:40:59.608 NotebookApp] Saving file at /QA_08062017.ipynb
+[W 10:15:14.618 NotebookApp] WebSocket ping timeout after 103580 ms.
+[E 10:15:14.660 NotebookApp] Uncaught exception GET /api/kernels/190cf917-d4ee-480b-8764-6f3e1f61da77/channels?sess
+ion_id=84626CD671F24D8DA7C3D07E854986BD (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='localhost:8889', method='GET', uri='/api/kernels/190cf917-d4ee-480b-87
+64-6f3e1f61da77/channels?session_id=84626CD671F24D8DA7C3D07E854986BD', version='HTTP/1.1', remote_ip='127.0.0.1', h
+eaders={'Origin': 'http://localhost:8889', 'Upgrade': 'websocket', 'Accept-Language': 'en-US,en;q=0.8', 'Accept-Enc
+oding': 'gzip, deflate, br', 'Sec-Websocket-Version': '13', 'Host': 'localhost:8889', 'Sec-Websocket-Key': 'XHIHMpj
+bJwMr6KUMKChtqw==', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like 
+Gecko) Chrome/59.0.3071.115 Safari/537.36', 'Connection': 'Upgrade', 'Cookie': '_xsrf=2|5dbc4f6c|73971dce3a60839180
+5692d05b2aa11e|1500227870; username-localhost-8888="2|1:0|10:1502057407|23:username-localhost-8888|44:YjMwNGY0MmFmY
+Tc4NDMzM2JiYTZjMDJjNDhmZmY4YmE=|952ae32825005f52e69c3b944035e12ea61b2defc73e0db5a242a00ad87cff5e"; username-localho
+st-8889="2|1:0|10:1502084100|23:username-localhost-8889|44:MWNjM2FjMmZjOGZkNDkyZmJlN2NiZDcxZTRjZTc4Yzg=|8fdaa4b6cc5
+6f58feaa4616df4314b85ccbf0bdbe117a2b89424ccd7d8bf096d"', 'Pragma': 'no-cache', 'Cache-Control': 'no-cache', 'Sec-We
+bsocket-Extensions': 'permessage-deflate; client_max_window_bits'})
+    Traceback (most recent call last):
+      File "/home/shankarz/anaconda2/lib/python2.7/site-packages/tornado/web.py", line 1425, in _stack_context_hand
+le_exception
+        raise_exc_info((type, value, traceback))
+      File "/home/shankarz/anaconda2/lib/python2.7/site-packages/tornado/stack_context.py", line 314, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/shankarz/anaconda2/lib/python2.7/site-packages/zmq/eventloop/zmqstream.py", line 191, in <lambda>
+        self.on_recv(lambda msg: callback(self, msg), copy=copy)
+      File "/home/shankarz/anaconda2/lib/python2.7/site-packages/notebook/services/kernels/handlers.py", line 373, 
+in _on_zmq_reply
+        super(ZMQChannelsHandler, self)._on_zmq_reply(stream, msg)
+      File "/home/shankarz/anaconda2/lib/python2.7/site-packages/notebook/base/zmqhandlers.py", line 258, in _on_zm
+q_reply
+        self.write_message(msg, binary=isinstance(msg, bytes))
+      File "/home/shankarz/anaconda2/lib/python2.7/site-packages/tornado/websocket.py", line 210, in write_message
+        raise WebSocketClosedError()
+    WebSocketClosedError
+[I 10:23:24.995 NotebookApp] Saving file at /QA_08062017.ipynb
+[I 10:25:45.925 NotebookApp] Saving file at /QA_08062017.ipynb
+
